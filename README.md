@@ -11,6 +11,17 @@ Prerequsites:-
 main.py contain main logic code.
 show.py contain function to show data of user using tkinter treeview.
 login.py contain code to login
+inside login.py👇
+ account_sid = "accont_sid in twilio"
+    auth_token = 'auth token in twilio'
+    client = Client(account_sid,auth_token)
+    message = client.messages.create(
+        body = f"your OTP is {otp}",
+        from_ = "enter your virtual number",
+        to = user_number
+    )
+    In this code 👆 you have to create twilio account and then verify your email and mobile. After that twilio will provide you "virtual mobile number"
+    "account_sid" and "auth_token" then copy these values and paste in this code as written and it will work properly
 
 
 https://user-images.githubusercontent.com/65009822/192137383-69b6cc9e-beeb-409c-8e14-1845f19c51b7.mp4
