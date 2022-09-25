@@ -8,11 +8,11 @@ Prerequsites:-
 2) sqlite3 - pip install sqlite3
 3) twilio - pip install twilio
 
-main.py contain main logic code.
-show.py contain function to show data of user using tkinter treeview.
-login.py contain code to login
+4) main.py contain main logic code.
+5) show.py contain function to show data of user using tkinter treeview.
+6) login.py contain code to login
 inside login.py👇
- account_sid = "accont_sid in twilio"
+7) account_sid = "accont_sid in twilio"
     auth_token = 'auth token in twilio'
     client = Client(account_sid,auth_token)
     message = client.messages.create(
@@ -20,7 +20,7 @@ inside login.py👇
         from_ = "enter your virtual number",
         to = user_number
     )
-    In this code 👆 you have to create twilio account and then verify your email and mobile. After that twilio will provide you "virtual mobile number"
+  8)  In this code 👆 you have to create twilio account and then verify your email and mobile. After that twilio will provide you "virtual mobile number"
     "account_sid" and "auth_token" then copy these values and paste in this code as written and it will work properly
 
 
