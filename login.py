@@ -10,12 +10,12 @@ from main import main2
 otp = random.randint(1000,9999)
 def login():
     user_number = phone_entry.get()
-    account_sid = "AC29f8eb803d341587131b62d7f5667aa8"
-    auth_token = 'd0e3bbc90c92d2e7da993d24843b610a'
+    account_sid = "accont_sid in twilio"
+    auth_token = 'auth token in twilio'
     client = Client(account_sid,auth_token)
     message = client.messages.create(
         body = f"your OTP is {otp}",
-        from_ = "+13022087162",
+        from_ = "enter your virtual number",
         to = user_number
     )
 
